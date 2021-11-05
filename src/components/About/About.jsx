@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeImage from "../Assets/home-image.jpg";
+import aboutImage from "../Assets/mountain-image.jpg";
 
 const Home = () => {
   return (
@@ -8,16 +8,14 @@ const Home = () => {
       <Container fluid className="home-section" id="home">
       <Container className="home-content">
         <Row lg={3}>
-          <Col md={7} className="home-header">
-            <h1>Hi! I'm Andrew Jones.</h1>
-            <h2>Software Engineer</h2>
-            <h2>Web Developer</h2>
-            <h2>Good Guy</h2>
+          <Col md={7}>
+            <h1>Andrew Jones</h1>
+            <p>My name is Andrew Jones. During my free time I enjoy running, rock climbing, gaming and working on personal projects.</p>
           </Col>
-          <Col md={7} style={{ paddingBottom: 20 }}>
+          <Col md={7}>
             <img
-              src={homeImage}
-              alt="home pic"
+              src={aboutImage}
+              alt="about pic"
               className="img-fluid"
               width="600"
               height="500"
