@@ -3,8 +3,9 @@ import logo from "./logo.svg";
 import "./App.css";
 import "./style.css"
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./components/Home/Home";
 import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
+import Home from "./components/Home/Home";
 import NavBar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -15,8 +16,9 @@ function App() {
       <Router>
           <NavBar />
           <Routes>
-            <Route path="/Portfolio" element={<Home />} />
-            <Route path="/Portfolio/about" element={<About />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
           </Routes>
       </Router>
     </div>

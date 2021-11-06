@@ -7,17 +7,22 @@ import Container from "react-bootstrap/Container";
 function NavBar() {
 
   return (
-    <Navbar bg="light" expand="lg" fixed="top">
+    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
     <Container>
-        <Nav className="ml-auto" defaultActiveKey="#">
+        <Nav className="nav-def" defaultActiveKey="#">
           <Nav.Item>
-            <Nav.Link as={Link} to="/Portfolio" >
+            <Nav.Link as={Link} to="/" className="nav-def"  >
                Home
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} to="/Portfolio/about" >
+            <Nav.Link as={Link} to="/about" >
                About
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={Link} to="/experience" >
+               Experience
             </Nav.Link>
           </Nav.Item>
         </Nav>
