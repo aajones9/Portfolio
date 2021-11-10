@@ -25,6 +25,11 @@ function NavBar() {
                Experience
             </Nav.Link>
           </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={Link} to="/resume" >
+               Resume
+            </Nav.Link>
+          </Nav.Item>
         </Nav>
       </Container>
     </Navbar>

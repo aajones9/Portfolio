@@ -7,7 +7,7 @@
   z-index: -1;
   background-image: url(./components/Assets/background.png);
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -30,4 +30,28 @@
 
 .nav-def {
   color: white;
+}
+
+.img-fluid {
+  padding: 20px;
+  float: right;
+}
+
+.footer {
+  backgroundColor: "#F8F8F8";
+  borderTop: "1px solid #E7E7E7";
+  textAlign: "center";
+  padding: "20px";
+  position: "fixed";
+  left: "0";
+  bottom: "0";
+  height: "60px";
+  width: "100%";
+}
+
+.phamtom {
+display: 'block';
+padding: '20px';
+height: '60px';
+width: '100%';
 }
